@@ -1,3 +1,70 @@
+
 .app
     max-width 960px
-    margin 0 auto
+    margin 0 20px
+    +above(1024px)
+    	margin 0 auto
+  .logo
+  	margin 0
+.header-wrapper
+	display flex
+	align-items center
+	margin-bottom 50px
+.filters
+	min-height 20px
+.filters-box
+	margin-bottom  20px
+	h2
+		font-size 18px
+		font-weight bold
+		text-transform capitalize
+	ul
+		padding-left 15%
+		li
+			text-transform capitalize
+.list-items
+	margin-top 20px
+#gr-items-books
+	display flex
+	flex-wrap wrap
+	article 
+		width 32%
+		margin-right 2%
+		&:nth-child(3n)
+			margin-right 0
+		
+		margin-bottom 20px
+		+below(690px)
+			width 48%	
+			&:nth-child(even)
+				margin-right 0
+			&:nth-child(odd)
+				margin-right 2%
+			
+		h2
+			font-size 18px
+			margin 15px 0
+			font-weight bold
+#page_navigation
+	display flex;
+	width 100% 
+	justify-content flex-end
+	a
+		display none;
+		&:last-child,&:first-child
+			display block
+		&:last-child
+			margin-left 15px;
+			padding-left 15px
+			position relative
+			display flex
+			align-items center
+			&:before
+				content ''
+				display block
+				position absolute 
+				height 80%
+				background-color #000
+				width 1px
+				left 0px
+	

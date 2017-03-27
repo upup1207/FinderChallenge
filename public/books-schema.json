@@ -4,7 +4,7 @@
       {
         "horror": {
           "id": 1,
-          "lable": "Terror"
+          "label": "Terror"
         },
         "comedy": {
           "id": 2,

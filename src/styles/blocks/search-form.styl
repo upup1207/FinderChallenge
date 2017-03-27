@@ -1,9 +1,30 @@
 .search-form
-    margin-top 30px
-
+    margin-top 0px
+    margin-left 20px
+    display flex
+    height 30px
+    input
+    	border 1px solid #ccc
+    >button 
+    	margin-left 15px
+    	padding 10px 10px
+    	line-height 10px
+    	border 1px solid #000
+    	text-transform capitalize
+    .btn-save-src
+    	border none
+    	background-color transparent
+    	color blue
+    	text-decoration underline
+    	
 /*
     for responsive
 */
 .search-form
     +below(650px)
         display none
+.btn-src
+	transition: all 0.35s ease;
+	&:enabled{
+		background-color:red;
+	}

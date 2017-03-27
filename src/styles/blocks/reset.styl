@@ -1,0 +1,59 @@
+/* RESET */
+*
+  box-sizing: border-box
+html
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+body
+  margin: 0
+  padding: 0
+hr, h1, h2, h3, h4, h5, p, img, ul, li
+  border: 0
+  padding: 0
+  margin: 0
+  outline: 0
+ul, ol
+  list-style: none
+  padding: 0
+h1,h2,h3,h4,h5
+  font-weight: normal
+a
+  text-decoration: none
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+a, button, input
+  border: 0
+  padding: 0
+  font-size: inherit
+  &:focus, &:active
+    outline: none
+    text-decoration: none
+select, button, input
+  overflow: visible
+  border: none
+  /* Para safari , IOS*/
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border-radius: 0
+  /* Para firefox */
+  outline: none
+  /* Para crome, le quita la fechita*/
+  &::-ms-expand
+    display: none
+  /* */
+  &:hover
+    cursor: pointer
+  &:focus
+    outline: none
+input[type="submit"]:hover
+  cursor: pointer
+audio:not([controls])
+  display: none
+  height: 0
+audio, video, canvas
+  display: inline-block
+button, input, select
+  appearance: none

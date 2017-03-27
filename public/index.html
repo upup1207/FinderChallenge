@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Finder challenge</title>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
+    <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app pure-g">
+      <header class="pure-u-1 header-wrapper">
+        <h1 class="logo">Finder challenge!</h1>
+        <div class="search-form">
+          <input id="myinput">
+          <button class="btn-src" disabled="disabled">buscar</button>
+          <button class="btn-save-src">guardar busqueda</button>
+        </div>
+        <div class="cnt-search"></div>
+      </header>
+      <aside class="filters pure-u-1-4">
+        <div class="filters-box">
+          <h2> busquedas guardadas</h2>
+          <ul class="list-items"> 
+            <li> <a href="">terror puro</a></li>
+            <li> <a href="">search drama</a></li>
+            <li> <a href="">comedias en ingles</a></li>
+          </ul>
+        </div>
+        <div class="filters-box">
+          <h2> categorias</h2>
+          <ul class="list-items"> 
+            <li> <a href="">todos</a></li>
+            <li> <a href="">terror</a></li>
+            <li> <a href="">comedia lorem</a></li>
+            <li><a href="">drama  </a></li>
+          </ul>
+        </div>
+        <div class="filters-box">
+          <h2> idioma</h2>
+          <ul class="list-items"> 
+            <li> <a href="">todos</a></li>
+            <li> <a href="">ingles</a></li>
+            <li> <a href="">español</a></li>
+            <li><a href="">portugues</a></li>
+          </ul>
+        </div>
+        <div class="filters-box">
+          <h2> publicacion</h2>
+          <ul class="list-items"> 
+            <li> <a href="">todos</a></li>
+            <li> <a href="">hoy</a></li>
+            <li> <a href="">hace una semana</a></li>
+            <li> <a href="">hace un mes</a></li>
+            <li> <a href="">hace un año</a></li>
+          </ul>
+        </div>
+        <div class="filters-box">
+          <h2> presentacion</h2>
+          <ul class="list-items"> 
+            <li> <a href="">impreso</a></li>
+            <li> <a href="">digital</a></li>
+            <li> <a href="">impreso y digital</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div id="current_page" type="hidden"> </div>
+      <div id="show_per_page" type="hidden"></div>
+      <content class="pure-u-3-4">
+        <div id="gr-items-books"></div>
+        <div id="page_navigation"></div>
+      </content>
+      <footer class="pure-u-1"></footer>
+    </div>
+    <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/scripts/jquery-3.1.1.min.js"></script>
+    <script src="/scripts/awesomplete.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/search-form.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
