@@ -52,12 +52,22 @@ function init() {
         list:list_title,
         minChars: 3,
         maxItems: 7,
-});
+        });
 
     }
 }
 init();
+/*LIST ITEMS OPT EDIT - DELETE*/
+function createEdit(){
+    $( "#save-ul li" ).each( function(){
+        $(this).prepend('<div class="list-items-opt"><span>editar</span><span>eliminar</span></div>');
+    });
+   /* $(".list-items li").innerHTML = out_edit;*/
+    console.log('each');
 
+}
+createEdit();
+/*LIST ITEMS OPT EDIT - DELETE*/
 $(document).ready(function(){
 
     //how much items per page to show
