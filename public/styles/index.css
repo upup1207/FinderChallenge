@@ -4,6 +4,7 @@
 .app {
   max-width: 960px;
   margin: 0 20px;
+  position: relative;
 }
 @media only screen and (min-width: 1024px) {
   .app {
@@ -37,6 +38,10 @@
 }
 .list-items {
   margin-top: 20px;
+}
+.list-items li:hover .list-items-opt {
+  overflow: visible;
+  height: auto;
 }
 #gr-items-books {
   display: flex;
@@ -93,6 +98,19 @@
   background-color: #000;
   width: 1px;
   left: 0px;
+}
+.list-items-opt {
+  height: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.list-items-opt span {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.visually-hidden {
+  display: none;
 }
 * {
   box-sizing: border-box;
@@ -210,6 +228,7 @@ select {
 }
 .search-form input {
   border: 1px solid #ccc;
+  padding: 5px 5px;
 }
 .search-form >button {
   margin-left: 15px;
@@ -234,4 +253,44 @@ select {
 }
 .btn-src:enabled {
   background-color: #f00;
+}
+.pop-save {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  max-width: 20vw;
+  top: 50px;
+  right: 0px;
+  margin: 0px auto;
+  height: 20vh;
+  background-color: #808080;
+}
+.pop-save h3 {
+  text-align: center;
+  letter-spacing: normal;
+  margin: 15px auto;
+}
+.pop-save input {
+  display: block;
+  max-width: 70%;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  margin: 0 auto;
+}
+.pop-save .pop-save-btn {
+  border: 1px solid #ccc;
+  margin: 15px auto;
+  display: block;
+  padding: 10px 15px;
+}
+.awesomplete > ul {
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  padding: 5px 5px;
+}
+.awesomplete > ul li {
+  margin-top: 5px;
+  cursor: pointer;
 }

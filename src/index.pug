@@ -5,6 +5,7 @@ html(lang="es")
         meta(charset="utf-8")
         meta(viewport="width=device-width, initial-scale=1.0")
         link(href="https://fonts.googleapis.com/css?family=Proxima+Nova", rel="stylesheet", type="text/css")
+        link(href="/styles/awesomplete.css")
         link(href="/vendor/pure/pure-min.css", rel="stylesheet")
         link(href="/styles/index.css", rel="stylesheet")
 
@@ -14,12 +15,19 @@ html(lang="es")
                 h1.logo Finder challenge!
                 include blocks/search-form
                 .cnt-search
+            div.pop-save
+                h3 Titulo De Busqueda
+                input.edit-tittle-save
+                button.pop-save-btn Guardar
             aside.filters.pure-u-1-4
                 .filters-box
                     h2  busquedas guardadas
                     ul.list-items 
                         li 
                             a(href="") terror puro
+                            div.list-items-opt
+                                span editar
+                                span eliminar
                         li 
                             a(href="") search drama
                         li 

@@ -1,7 +1,7 @@
-
 .app
     max-width 960px
     margin 0 20px
+    position relative
     +above(1024px)
     	margin 0 auto
   .logo
@@ -24,6 +24,11 @@
 			text-transform capitalize
 .list-items
 	margin-top 20px
+	li
+		&:hover
+			.list-items-opt
+				overflow visible
+				height auto
 #gr-items-books
 	display flex
 	flex-wrap wrap
@@ -67,4 +72,13 @@
 				background-color #000
 				width 1px
 				left 0px
-	
+.list-items-opt
+	height 0
+	transition all 0.5s ease
+	overflow hidden
+	span
+		display inline-block
+		margin-right 5px
+		cursor pointer
+.visually-hidden
+	display none

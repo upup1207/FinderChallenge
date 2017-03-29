@@ -3,7 +3,8 @@
 */
 
 var JSON_FILE = '/books_schema.json';
-var JSON_ARTICLES;
+var JSON_ARTICLES,complete;
+
 /*
  @method loadJSON
  source: https://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
@@ -47,11 +48,13 @@ function init() {
         document.getElementById("gr-items-books").innerHTML = out;
         console.log(list_title);
         var input = document.getElementById("myinput");
-        new Awesomplete(input,list_title);
-
+        complete = new Awesomplete(input,{
+        list:list_title,
+        minChars: 3,
+        maxItems: 7,
+});
 
     }
-
 }
 init();
 
